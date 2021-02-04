@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Bookstore
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
-In the project directory, you can run:
+<!-- PROJECT LOGO -->
+  <h3 align="center">BookStore</h3>
 
-### `npm start`
+<!-- ABOUT THE PROJECT -->
+## About The Project
+Bookstore is an application for organizing and managing a bookstore. It's Build using React & Redux-
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Live Demo
+It's deployed [here](http://bookstore-jamezjez.herokuapp.com/) on heroku
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Built With
+This project was built using these technologies.
+* React
+* JavaScript
+* GitHub
+* Eslint
+* Stylelint
+* VScode
+* Jest
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Getting Started
 
-### `npm run build`
+To get a local copy up and running follow these simple example steps.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ * [Node.js](https://nodejs.org/) is required to install dependencies and run scripts via npm.
+ * A modern browser
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Clone
+* Clone this repo:
+  - Clone with SSH:
+  ```
+    git@github.com:jessicafarias/bookstore-cms.git
+  ```
+  - Clone with HTTPS
+  ```
+    https://github.com/jessicafarias/bookstore-cmsgit
+  ```
+  - Clone with GitHub CLI
+  ```
+    gh repo clone jessicafarias/bookstore-cms
+    
+ - cd to bookstore-cms
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Setup
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+$ npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Start the local webserver:
 
-## Learn More
+```$ npm start``` will open the bookstore at local webserver at http://localhost:3000/ 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
 
-### Code Splitting
+## 👤 Jessica Michelle Farías Rosado:
+ [![Website](https://img.shields.io/badge/-Website-black?style=for-the-badge&logo=Julia&logoColor=white)](https://jessicafarias.github.io/)
+ [![LINKEDIN](https://img.shields.io/badge/-LINKEDIN-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/jessica-michelle-farias-rosado/)
+ [![EMAIL](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=Mail.Ru&logoColor=white)](mailto:jessica.farias.rosado@gmail.com)
+ [![TWITTER](https://img.shields.io/badge/-TWITTER-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/FariasRosado)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## 👤 Odufu James Chigozie
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ [![Website](https://img.shields.io/badge/-Website-black?style=for-the-badge&logo=Julia&logoColor=white)](https://github.com/jamezjaz)
+ [![LINKEDIN](https://img.shields.io/badge/-LINKEDIN-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/jamesgozieodufu/)
+ [![EMAIL](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=Mail.Ru&logoColor=white)](mailto:jamezjaz@gmail.com)
+ [![TWITTER](https://img.shields.io/badge/-TWITTER-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/jamezjaz90)
+ 
 
-### Making a Progressive Web App
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions, issues and feature requests are welcome!
 
-### Advanced Configuration
+Feel free to check the [issues page](https://github.com/jessicafarias/bookstore-cms/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Show your support
 
-### Deployment
+Give a :star: if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/jessicafarias/bookstore-cms.svg?style=flat-square
+[contributors-url]: https://github.com/jessicafarias/bookstore-cms/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jessicafarias/bookstore-cms.svg?style=flat-square
+[forks-url]: https://github.com/jessicafarias/bookstore-cms/network/members
+[stars-shield]: https://img.shields.io/github/stars/jessicafarias/bookstore-cms.svg?style=flat-square
+[stars-url]: https://github.com/jessicafarias/bookstore-cms/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jessicafarias/bookstore-cms.svg?style=flat-square
+[issues-url]: https://github.com/jessicafarias/bookstore-cms/issues
+
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.

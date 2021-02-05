@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 
 const BooksList = props => {
-  const { id, title, category } = props;
+  const { books } = props;
   return (
     <div>
       <table style={{ width: '100%' }}>
@@ -14,29 +14,18 @@ const BooksList = props => {
             <th>Category</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>{id}</td>
-            <td>{title}</td>
-            <td>{category}</td>
-          </tr>
-        </tbody>
-        <Book book={props} />
+        {books.map(book => <Book key={book.id} book={book} />)}
       </table>
     </div>
   );
 };
 
 BooksList.propTypes = {
-  id: PropTypes.number,
-  title: PropTypes.string,
-  category: PropTypes.string,
-};
-
-BooksList.defaultProps = {
-  id: 1,
-  title: 'Animal Farm',
-  category: 'African Prose',
+  books: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    category: PropTypes.string,
+  })).isRequired,
 };
 
 export default BooksList;

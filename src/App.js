@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="App">
       <h2>BookStore</h2>
-      <BooksList />
+      <BooksList
+        books={
+          [{ id: 1, title: 'titleOne', category: 'Action' }, { id: 2, title: 'titleTwo', category: 'Sci-Fi' }]
+        }
+      />
       <BooksForm />
     </div>
   );

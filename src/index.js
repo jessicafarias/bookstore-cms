@@ -1,19 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import './index.css';
 import App from './App';
+import bookReducer from './reducers/books';
 
-const state = [
-  { id: 1, title: 'title1', category: 'Horror' },
-  { id: 2, title: 'title2', category: 'Horror' },
-  { id: 3, title: 'title3', category: 'Horror' },
-];
+const store = createStore(bookReducer);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root'),
 );
-
-export default state;

@@ -5,7 +5,6 @@ import { createStore } from 'redux';
 import './index.css';
 import App from './App';
 import rootReducer from './reducers';
-// import bookReducer from './reducers/books';
 
 const store = createStore(rootReducer);
 

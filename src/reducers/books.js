@@ -2,8 +2,8 @@ import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
 
 const initialState = [
   { id: Math.floor(Math.random() * 100) + 1, title: 'title1', category: 'Horror' },
-  { id: Math.floor(Math.random() * 100) + 1, title: 'title2', category: 'Horror' },
-  { id: Math.floor(Math.random() * 100) + 1, title: 'title3', category: 'Horror' },
+  { id: Math.floor(Math.random() * 100) + 1, title: 'title2', category: 'Sci-Fi' },
+  { id: Math.floor(Math.random() * 100) + 1, title: 'title3', category: 'Action' },
 ];
 
 const deleteBook = (state, action) => {

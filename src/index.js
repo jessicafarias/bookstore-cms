@@ -4,9 +4,10 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import './index.css';
 import App from './App';
-import bookReducer from './reducers/books';
+import rootReducer from './reducers';
+// import bookReducer from './reducers/books';
 
-const store = createStore(bookReducer);
+const store = createStore(rootReducer);
 
 ReactDOM.render(
   <Provider store={store}>

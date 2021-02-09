@@ -12,8 +12,6 @@ const BooksForm = props => {
     },
   );
 
-  console.log(state);
-
   const handleClick = event => {
     if (event.target.name === 'title') {
       setState({
@@ -37,7 +35,11 @@ const BooksForm = props => {
       category: state.category,
     };
     createBook(book);
-    console.log(book);
+
+    setState({
+      title: '',
+      category: '',
+    });
   };
 
   return (

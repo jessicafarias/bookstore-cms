@@ -7,7 +7,6 @@ import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = props => {
   const { books, filtered } = props;
-  console.log(filtered);
 
   const handleRemoveBook = book => {
     const { removeBook } = props;
@@ -17,7 +16,6 @@ const BooksList = props => {
   const handleFilterChange = category => {
     const { filter } = props;
     filter(category);
-    // console.log(filter);
   };
 
   const filteredBooks = books.filter(book => (
@@ -50,7 +48,11 @@ BooksList.propTypes = {
   })).isRequired,
   removeBook: PropTypes.func.isRequired,
   filter: PropTypes.func.isRequired,
-  filtered: PropTypes.string.isRequired,
+  filtered: PropTypes.string,
+};
+
+BooksList.defaultProps = {
+  filtered: null,
 };
 
 const mapStateToProps = state => ({

@@ -1,16 +1,16 @@
-import { CHANGE_FILTER } from "../actions";
+import { CHANGE_FILTER } from '../actions';
 
 const filter = null;
 
 const filterReducer = (state = filter, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case CHANGE_FILTER:
       return {
-        filter: action.filter
-      }
+        filter: action.filter,
+      };
     default:
-      return state
+      return state;
   }
-}
+};
 
 export default filterReducer;

@@ -6,7 +6,8 @@ import { removeBookAction, changeFilterAction } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = props => {
-  const { books } = props;
+  const { books, filtered } = props;
+  console.log(filtered);
 
   const handleRemoveBook = book => {
     const { removeBook } = props;
@@ -16,7 +17,11 @@ const BooksList = props => {
   const handleFilterChange = category => {
     const { filter } = props;
     filter(category);
+    // console.log(filter);
   };
+
+  const filteredBooks = books.filter(book => (
+    !!((filtered === null || filtered === book.category))));
 
   return (
     <div>
@@ -31,7 +36,7 @@ const BooksList = props => {
             <th>Remove Option</th>
           </tr>
         </thead>
-        {books.map(book => <Book key={book.id} book={book} removeBtn={handleRemoveBook} />)}
+        {filteredBooks.map(book => <Book key={book.id} book={book} removeBtn={handleRemoveBook} />)}
       </table>
     </div>
   );
@@ -45,9 +50,14 @@ BooksList.propTypes = {
   })).isRequired,
   removeBook: PropTypes.func.isRequired,
   filter: PropTypes.func.isRequired,
+  filtered: PropTypes.string.isRequired,
 };
 
-const mapStateToProps = state => ({ books: state.book });
+const mapStateToProps = state => ({
+  books: state.book,
+  filtered: state.filter,
+});
+
 const mapDispatchToProps = dispatch => ({
   removeBook: book => {
     dispatch(removeBookAction(book));

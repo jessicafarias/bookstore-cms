@@ -9,7 +9,9 @@ const Book = props => {
         <td>{book.id}</td>
         <td>{book.title}</td>
         <td>{book.category}</td>
-        <button type="button" onClick={() => { removeBtn(book); }}> DELETE </button>
+        <td>
+          <button type="button" onClick={() => { removeBtn(book); }}> DELETE </button>
+        </td>
       </tr>
     </tbody>
   );

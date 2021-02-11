@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const CategoryFilter = props => {
-  const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+  const categories = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   const { handleFilter } = props;
 
   const handleClick = event => {
@@ -15,9 +15,8 @@ const CategoryFilter = props => {
 
   return (
     <label htmlFor="select">
-      Filter by category:
+      Filter By Category:
       <select name="category" id="select" onChange={handleClick}>
-        <option selected>All</option>
         {categories.map(category => <option value={category} key={category}>{category}</option>)}
       </select>
     </label>

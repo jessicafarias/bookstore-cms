@@ -53,7 +53,7 @@ const BooksForm = props => {
       <label htmlFor="select">
         Categories:
         <select name="category" id="select" onChange={handleClick} value={state.category}>
-          <option>Select Category</option>
+          <option disable hidden>Select Category</option>
           {categories.map(category => <option value={category} key={category}>{category}</option>)}
         </select>
       </label>

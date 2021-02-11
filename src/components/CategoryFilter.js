@@ -6,8 +6,6 @@ const CategoryFilter = props => {
 
   const handleClick = event => {
     const { value } = event.target;
-    // handleFilter(value);
-    // console.log(value);
     if (value === 'All') {
       handleFilter(null);
     } else {

@@ -2,26 +2,25 @@
 
 .header {
   width: 1200px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid black; */
+  padding: 10px;
+  border-bottom: solid 1px #e8e8e8;
+  font-family: Montserrat;
 }
 
 .panel-bg {
   display: flex;
+  min-width: 500px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
-  height: 95px;
-  /* margin: 0 0 38px;
-  padding: 23px 99px 27px 100px; */
   background-color: #ffffff;
 }
 
 .Bookstore-CMS {
   width: 260px;
-  height: 37px;
-  margin: 6px 47px 2px 0;
   font-family: Montserrat;
   font-size: 30px;
   font-weight: bold;
@@ -34,4 +33,36 @@
 
 .user {
   height: 20px;
+}
+
+.Oval {
+  width: 20px;
+  height: 20px;
+  padding: 14px;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+}
+
+.BOOKS , select {
+  height: 16px;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+select{
+  color: #6e6e6e;
+  border:none;
+  background-color: white;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
 }

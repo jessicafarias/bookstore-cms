@@ -1,17 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/Book.css';
 
 const Book = props => {
   const { book, removeBtn } = props;
   return (
     <tbody>
       <tr>
-        <td>{book.id}</td>
-        <td>{book.title}</td>
-        <td>{book.category}</td>
-        <td>
-          <button type="button" onClick={() => { removeBtn(book); }}> DELETE </button>
-        </td>
+        <div className="flex-row">
+          <div className="align-start">
+            <p>{book.category}</p>
+            <p>{book.title}</p>
+            <p>Author</p>
+            <div className="flex-row blue-text">
+              <p>Comments</p>
+              <button type="button" onClick={() => { removeBtn(book); }}> Remove </button>
+              <p>Edit</p>
+            </div>
+          </div>
+          <div>
+            <p>65%</p>
+            <p>Completed</p>
+          </div>
+          <div>
+            <p>CURRENT CHAPTER</p>
+            <p>Chapter 17</p>
+            <button type="button">UPDATE PROGRESS</button>
+          </div>
+        </div>
       </tr>
     </tbody>
   );

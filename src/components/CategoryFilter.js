@@ -17,16 +17,19 @@ const CategoryFilter = props => {
 
   return (
     <div className="header">
-      <label htmlFor="select" className="panel-bg">
+      <div className="panel-bg">
         <h2 className="Bookstore-CMS">BookStore CMS</h2>
-        <p>BOOKS</p>
-        <select name="category" id="select" onChange={handleClick}>
-          {categories.map(
-            category => <option value={category} key={category}>{category}</option>,
-          )}
-        </select>
-      </label>
-      <div>
+        <p className="BOOKS">BOOKS</p>
+        <label htmlFor="select">
+          <select name="category" id="select" onChange={handleClick}>
+            <option disable="true" hidden>CATEGORIES</option>
+            {categories.map(
+              category => <option value={category} key={category}>{category}</option>,
+            )}
+          </select>
+        </label>
+      </div>
+      <div className="Oval">
         <img className="user" src={user} alt="user" />
       </div>
     </div>

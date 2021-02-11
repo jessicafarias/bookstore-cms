@@ -1,0 +1,24 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.align-start{
+  text-align: start;
+}
+
+.blue-text {
+  width: 27px;
+  height: 19px;
+  margin: 3px 298px 2px 17px;
+  font-family: RobotoSlab;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}

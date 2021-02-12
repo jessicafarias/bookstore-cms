@@ -121,3 +121,54 @@ button {
 .circular-chart.blue .circle {
   stroke: #3c9ee5;
 }
+
+.Current-Chapter {
+  width: 126px;
+  height: 18px;
+  margin: 1px 58px 0 59px;
+  opacity: 0.5;
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Current-Lesson {
+  width: 75px;
+  height: 21px;
+  margin: 7px 109px 4px 59px;
+  font-family: RobotoSlab;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.Rectangle-2 {
+  width: 184px;
+  height: 33px;
+  margin: 12px 0 9px 59px;
+  padding: 0.25px 0 12px 2px;
+  border-radius: 3px;
+  background-color: #0290ff;
+}
+
+.Update-progress {
+  height: 18px;
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+}

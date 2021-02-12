@@ -42,9 +42,11 @@ const Book = props => {
             </div>
           </div>
           <div>
-            <p>CURRENT CHAPTER</p>
-            <p>Chapter 17</p>
-            <button type="button">UPDATE PROGRESS</button>
+            <p className="Current-Chapter">CURRENT CHAPTER</p>
+            <p className="Current-Lesson">Chapter 17</p>
+            <div className="Rectangle-2">
+              <p className="Update-progress">UPDATE PROGRESS</p>
+            </div>
           </div>
         </div>
       </tr>

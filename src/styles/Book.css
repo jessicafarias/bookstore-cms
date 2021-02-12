@@ -83,20 +83,19 @@ button {
   border-right: solid 1px #e8e8e8;
 }
 
-.flex-wrapper {
+.percent-completed {
   display: flex;
-  flex-flow: row nowrap;
 }
 
 .single-chart {
-  width: 33%;
-  justify-content: space-around ;
+  width: 80%;
+  padding-right: 20px;
 }
 
 .circular-chart {
   display: block;
   margin: 10px auto;
-  max-width: 80%;
+  min-width: 70px;
   max-height: 250px;
 }
 
@@ -121,11 +120,4 @@ button {
 
 .circular-chart.blue .circle {
   stroke: #3c9ee5;
-}
-
-.percentage {
-  fill: #666;
-  font-family: sans-serif;
-  font-size: 0.5em;
-  text-anchor: middle;
 }

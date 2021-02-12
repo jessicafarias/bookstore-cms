@@ -8,13 +8,13 @@ const Book = props => {
     <tbody>
       <tr>
         <div className="flex-row">
-          <div className="align-start">
-            <p>{book.category}</p>
-            <p>{book.title}</p>
-            <p>Author</p>
-            <div className="flex-row blue-text">
-              <p>Comments</p>
-              <button type="button" onClick={() => { removeBtn(book); }}> Remove </button>
+          <div className="align-start book">
+            <p className="School-of">{book.category}</p>
+            <p className="title">{book.title}</p>
+            <p className="blue-text">Author</p>
+            <div className="options blue-text">
+              <p className="border-right ">Comments</p>
+              <button className="border-right " type="button" onClick={() => { removeBtn(book); }}> Remove </button>
               <p>Edit</p>
             </div>
           </div>

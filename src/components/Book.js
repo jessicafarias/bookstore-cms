@@ -19,7 +19,7 @@ const Book = props => {
                 <p>Edit</p>
               </div>
             </div>
-            <div className="percent-completed">
+            <div className="percent-comp">
               <div className="single-chart">
                 <svg viewBox="0 0 36 36" className="circular-chart blue">
                   <path
@@ -38,16 +38,16 @@ const Book = props => {
                 </svg>
               </div>
               <div>
-                <p>65%</p>
+                <p className="Percent-Complete">65%</p>
                 <p>Completed</p>
               </div>
             </div>
             <div>
               <p className="Current-Chapter">CURRENT CHAPTER</p>
               <p className="Current-Lesson">Chapter 17</p>
-              <div className="Rectangle-2">
+              <button type="button" className="Rectangle-2">
                 <p className="Update-progress">UPDATE PROGRESS</p>
-              </div>
+              </button>
             </div>
           </div>
         </td>

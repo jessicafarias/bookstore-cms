@@ -83,8 +83,9 @@ button {
   border-right: solid 1px #e8e8e8;
 }
 
-.percent-completed {
+.percent-comp {
   display: flex;
+  padding-bottom: 15px;
 }
 
 .single-chart {
@@ -155,9 +156,11 @@ button {
   width: 184px;
   height: 33px;
   margin: 12px 0 9px 59px;
-  padding: 0.25px 0 12px 2px;
   border-radius: 3px;
   background-color: #0290ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Update-progress {
@@ -171,4 +174,30 @@ button {
   letter-spacing: 0.5px;
   text-align: center;
   color: #ffffff;
+}
+
+.Percent-Complete {
+  height: 39px;
+  margin: 1px 30px 0 11px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Completed {
+  height: 18px;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }

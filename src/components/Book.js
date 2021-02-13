@@ -42,7 +42,7 @@ const Book = props => {
                 <p>Completed</p>
               </div>
             </div>
-            <div>
+            <div className="chapter">
               <p className="Current-Chapter">CURRENT CHAPTER</p>
               <p className="Current-Lesson">Chapter 17</p>
               <button type="button" className="Rectangle-2">

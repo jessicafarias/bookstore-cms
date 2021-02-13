@@ -43,7 +43,7 @@
   border-radius: 50%;
 }
 
-.BOOKS , select {
+.BOOKS , .select {
   height: 16px;
   font-family: Montserrat;
   font-size: 13px;
@@ -55,14 +55,15 @@
   color: #121212;
 }
 
-select{
-  color: #6e6e6e;
-  border:none;
-  background-color: white;
-}
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: '';
+}
+
+.select{
+  color: #6e6e6e;
+  border:none;
+  background-color: white;
 }

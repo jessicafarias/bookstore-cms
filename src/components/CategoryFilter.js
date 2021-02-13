@@ -21,7 +21,7 @@ const CategoryFilter = props => {
         <h2 className="Bookstore-CMS">BookStore CMS</h2>
         <p className="BOOKS">BOOKS</p>
         <label htmlFor="select">
-          <select name="category" id="select" onChange={handleClick}>
+          <select className="select" name="category" id="select" onChange={handleClick}>
             <option disable="true" hidden>CATEGORIES</option>
             {categories.map(
               category => <option value={category} key={category}>{category}</option>,

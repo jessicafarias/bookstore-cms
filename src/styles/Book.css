@@ -14,14 +14,31 @@ button {
 	outline: inherit;
 }
 
-.flex-row {
+.flex-row,
+.options,
+.percent-comp,
+.flex-row-center,
+.flex-col-center {
   display: flex;
+}
+
+.flex-row,
+.percent-comp {
   flex-direction: row;
+}
+
+.flex-row,
+.options {
   justify-content: space-between;
+}
+
+.flex-row {
+  max-width: 1200px;
   align-items: center;
   border: solid 1px #e8e8e8;
-  margin: 5px 40px;
+  margin: 5px auto;
   padding: 25px 10px;
+  background-color: #ffffff;
 }
 
 .align-start{
@@ -35,10 +52,6 @@ button {
   font-family: RobotoSlab;
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #4386bf;
 }
 
@@ -63,17 +76,11 @@ button {
   font-family: Montserrat;
   font-size: 14px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #121212;
 }
 
 .options {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 200px;
   margin-top: 15px;
 }
@@ -84,20 +91,16 @@ button {
 }
 
 .percent-comp {
-  display: flex;
   padding: 0px 30px;
-  flex-direction: row;
   justify-content: center;
 }
 
 .flex-row-center {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .flex-col-center {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -143,9 +146,6 @@ button {
   font-family: RobotoSlab;
   font-size: 13px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
   color: #121212;
 }
 
@@ -186,9 +186,6 @@ button {
   font-family: RobotoSlab;
   font-size: 13px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
   color: #ffffff;
@@ -207,10 +204,5 @@ button {
   opacity: 0.5;
   font-family: Montserrat;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #121212;
 }

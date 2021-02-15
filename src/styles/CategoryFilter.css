@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-.header {
-  width: 1200px;
+.header-container {
+  background-color: #ffffff;
+  border-bottom: solid 1px #e8e8e8;
   margin: auto auto 25px auto;
+}
+
+.header {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: solid 1px #e8e8e8;
   font-family: Montserrat;
 }
 
@@ -16,7 +21,6 @@
   min-width: 500px;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
 }
 
 .Bookstore-CMS {
@@ -24,10 +28,6 @@
   font-family: Montserrat;
   font-size: 30px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #0290ff;
 }
 
@@ -47,10 +47,6 @@
   height: 16px;
   font-family: Montserrat;
   font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.9px;
   color: #121212;
 }

@@ -46,16 +46,20 @@ const BooksForm = props => {
   return (
     <form>
       <p className="new-book">ADD NEW BOOK</p>
-      <label htmlFor="title">
-        <input placeholder="Book title" type="text" id="title" name="title" onChange={handleClick} value={state.title} />
-      </label>
-      <label htmlFor="select">
-        <select className="create-category" name="category" id="select" onChange={handleClick} value={state.category}>
-          <option disable="true" hidden>Category</option>
-          {categories.map(category => <option value={category} key={category}>{category}</option>)}
-        </select>
-      </label>
-      <button className="button-blue" type="submit" onClick={handleSubmit}> ADD BOOK </button>
+      <div>
+        <label htmlFor="title">
+          <input placeholder="Book title" type="text" id="title" name="title" onChange={handleClick} value={state.title} />
+        </label>
+        <label htmlFor="select">
+          <select className="create-category" name="category" id="select" onChange={handleClick} value={state.category}>
+            <option disable="true" hidden>Category</option>
+            {categories.map(
+              category => <option value={category} key={category}>{category}</option>,
+            )}
+          </select>
+        </label>
+        <button className="button-blue" type="submit" onClick={handleSubmit}> ADD BOOK </button>
+      </div>
     </form>
   );
 };

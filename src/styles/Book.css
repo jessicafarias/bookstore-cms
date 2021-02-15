@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap');
+
 p {
   margin: 0;
   padding: 0;
 }
 
 button {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .flex-row,
@@ -38,10 +39,10 @@ button {
   border: solid 1px #e8e8e8;
   margin: 5px auto;
   padding: 25px 10px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-.align-start{
+.align-start {
   text-align: start;
 }
 
@@ -49,7 +50,7 @@ button {
   width: 73px;
   height: 19px;
   margin: 3px 15px 2px 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #4386bf;
@@ -64,7 +65,7 @@ button {
   color: #121212;
 }
 
-.book{
+.book {
   width: 42%;
 }
 
@@ -73,7 +74,7 @@ button {
   height: 18px;
   margin: 0 39px 0 0;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: #121212;
@@ -91,7 +92,7 @@ button {
 }
 
 .percent-comp {
-  padding: 0px 30px;
+  padding: 0 30px;
   justify-content: center;
 }
 
@@ -106,7 +107,7 @@ button {
   flex-direction: column;
 }
 
-.single-chart{
+.single-chart {
   min-width: 50px;
   width: 40%;
   max-width: 200px;
@@ -143,7 +144,7 @@ button {
 .Current-Chapter {
   height: 18px;
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 13px;
   font-weight: 300;
   color: #121212;
@@ -151,15 +152,15 @@ button {
 
 .Current-Lesson {
   height: 21px;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 16px;
   font-weight: 300;
-  margin:8px 0 20px 0;
+  margin: 8px 0 20px 0;
   letter-spacing: -0.4px;
   color: #121212;
 }
 
-.flex-col-center p:nth-child(2){
+.flex-col-center p:nth-child(2) {
   color: #121212;
   opacity: 0.5;
 }
@@ -178,23 +179,22 @@ button {
   width: 18%;
   text-align: start;
   padding: 20px;
-
 }
 
 .Update-progress {
   height: 18px;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 13px;
   font-weight: 300;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .Percent-Complete {
   height: 39px;
   margin: 1px 30px 0 11px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 32px;
   color: #121212;
 }
@@ -202,7 +202,7 @@ button {
 .Completed {
   height: 18px;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   color: #121212;
 }

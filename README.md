@@ -1,18 +1,25 @@
 # Bookstore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
 <!-- PROJECT LOGO -->
-  <h3 align="center">BookStore</h3>
+  <div align="center">
+    <a href="https://github.com/jessicafarias/bookstore-cms">
+      <img src="./src/assets/book.png" alt="Logo" width="80" height="80">
+    </a>
+    <h3 align="center">BookStore</h3>
+  </div>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Bookstore is an application for organizing and managing a bookstore. It's Build using React & Redux-
+Bookstore is an application for organizing and managing a bookstore. It's built using React & Redux.
+This project was built with [Create React App](https://github.com/facebook/create-react-app).
+
+## Preview
+![bookstore](https://user-images.githubusercontent.com/57812000/107990610-61b79500-6f9a-11eb-998e-b7037ac4c100.png)
 
 ## Live Demo
 It's deployed [here](http://bookstore-jamezjez.herokuapp.com/) on heroku
@@ -25,7 +32,6 @@ This project was built using these technologies.
 * Eslint
 * Stylelint
 * VScode
-* Jest
 
 
 ### Getting Started

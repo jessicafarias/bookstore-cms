@@ -19,7 +19,7 @@ const Book = props => {
                 <p>Edit</p>
               </div>
             </div>
-            <div className="percent-comp">
+            <div className="flex-row-center">
               <div className="single-chart">
                 <svg viewBox="0 0 36 36" className="circular-chart blue">
                   <path
@@ -37,7 +37,7 @@ const Book = props => {
                   />
                 </svg>
               </div>
-              <div>
+              <div className="flex-col-center">
                 <p className="Percent-Complete">65%</p>
                 <p>Completed</p>
               </div>

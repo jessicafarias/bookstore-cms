@@ -26,14 +26,6 @@ const BooksList = props => {
       <CategoryFilter handleFilter={handleFilterChange} />
 
       <table style={{ width: '100%' }}>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Remove Option</th>
-          </tr>
-        </thead>
         {filteredBooks.map(book => <Book key={book.id} book={book} removeBtn={handleRemoveBook} />)}
       </table>
     </div>

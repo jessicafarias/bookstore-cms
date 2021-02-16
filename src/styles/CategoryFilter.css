@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.header-container {
+  background-color: #fff;
+  border-bottom: solid 1px #e8e8e8;
+  margin: auto auto 25px auto;
+}
+
+.header {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: Montserrat, sans-serif;
+}
+
+.panel-bg {
+  display: flex;
+  min-width: 500px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Bookstore-CMS {
+  width: 260px;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0290ff;
+}
+
+.user {
+  height: 20px;
+}
+
+.Oval {
+  width: 20px;
+  height: 20px;
+  padding: 14px;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+}
+
+.BOOKS,
+.select {
+  height: 16px;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.select {
+  color: #6e6e6e;
+  border: none;
+  background-color: white;
+}

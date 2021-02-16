@@ -30,7 +30,7 @@ const Book = props => {
                   />
                   <path
                     className="circle"
-                    strokeDasharray="60, 100"
+                    strokeDasharray={`${book.percentage} ,100`}
                     d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
                     a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -38,7 +38,7 @@ const Book = props => {
                 </svg>
               </div>
               <div className="flex-col-center">
-                <p className="Percent-Complete">65%</p>
+                <p className="Percent-Complete">{book.percentage}</p>
                 <p>Completed</p>
               </div>
             </div>
@@ -61,6 +61,7 @@ Book.propTypes = {
     id: PropTypes.number,
     title: PropTypes.string,
     category: PropTypes.string,
+    percentage: PropTypes.number,
   }).isRequired,
   removeBtn: PropTypes.func.isRequired,
 };

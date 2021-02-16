@@ -34,6 +34,7 @@ const BooksForm = props => {
       id: Math.floor(Math.random() * 100) + 1,
       title: state.title,
       category: state.category,
+      percentage: 0,
     };
     createBook(book);
 

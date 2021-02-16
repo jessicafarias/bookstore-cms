@@ -1,9 +1,15 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
 
 const initialState = [
-  { id: Math.floor(Math.random() * 100) + 1, title: 'The Hunger Games', category: 'Action' },
-  { id: Math.floor(Math.random() * 100) + 1, title: 'Dune', category: 'Sci-Fi' },
-  { id: Math.floor(Math.random() * 100) + 1, title: 'Capitan in Twenty-First Century', category: 'Action' },
+  {
+    id: Math.floor(Math.random() * 100) + 1, title: 'The Hunger Games', category: 'Action', percentage: 60,
+  },
+  {
+    id: Math.floor(Math.random() * 100) + 1, title: 'Dune', category: 'Sci-Fi', percentage: 40,
+  },
+  {
+    id: Math.floor(Math.random() * 100) + 1, title: 'Capitan in Twenty-First Century', category: 'Action', percentage: 30,
+  },
 ];
 
 const deleteBook = (state, action) => {
@@ -19,6 +25,7 @@ const bookReducer = (state = initialState, action) => {
         id: action.id,
         title: action.title,
         category: action.category,
+        percentage: action.percentage,
       }];
     case REMOVE_BOOK:
       return deleteBook(state, action);

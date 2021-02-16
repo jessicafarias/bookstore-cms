@@ -7,6 +7,7 @@ export const createBookAction = book => ({
   id: book.id,
   title: book.title,
   category: book.category,
+  percentage: book.percentage,
 });
 
 export const removeBookAction = book => ({

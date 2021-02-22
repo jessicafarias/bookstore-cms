@@ -1,16 +1,6 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
 
-const initialState = [
-  {
-    id: Math.floor(Math.random() * 100) + 1, title: 'The Hunger Games', category: 'Action', percentage: 60,
-  },
-  {
-    id: Math.floor(Math.random() * 100) + 1, title: 'Dune', category: 'Sci-Fi', percentage: 40,
-  },
-  {
-    id: Math.floor(Math.random() * 100) + 1, title: 'Capitan in Twenty-First Century', category: 'Action', percentage: 30,
-  },
-];
+const initialState = [];
 
 const deleteBook = (state, action) => {
   const index = state.map(e => e.id).indexOf(action.id);

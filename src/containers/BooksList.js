@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import { connect, useDispatch } from 'react-redux';
 import Book from '../components/Book';
 import { removeBookAction, changeFilterAction } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
+import fetchBooks from '../apiRequests/requests';
 
 const BooksList = props => {
   const { books, filtered } = props;
@@ -20,6 +21,12 @@ const BooksList = props => {
 
   const filteredBooks = books.filter(book => (
     !!((filtered === null || filtered === book.category))));
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchBooks());
+  });
 
   return (
     <div>

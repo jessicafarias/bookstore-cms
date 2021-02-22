@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { connect, useDispatch } from 'react-redux';
+import { connect } from 'react-redux';
 import Book from '../components/Book';
-import { removeBookAction, changeFilterAction } from '../actions';
+import { removeBookAction, changeFilterAction, fetchBooksAction } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
-import fetchBooks from '../apiRequests/requests';
+import getData from '../apiRequests/requests2';
 
 const BooksList = props => {
   const { books, filtered } = props;
@@ -19,14 +19,15 @@ const BooksList = props => {
     filter(category);
   };
 
+  useEffect(() => {
+    getData().then(response => {
+      const { fetch } = props;
+      fetch(response);
+    });
+  }, []);
+
   const filteredBooks = books.filter(book => (
     !!((filtered === null || filtered === book.category))));
-
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchBooks());
-  });
 
   return (
     <div>
@@ -48,6 +49,7 @@ BooksList.propTypes = {
   removeBook: PropTypes.func.isRequired,
   filter: PropTypes.func.isRequired,
   filtered: PropTypes.string,
+  fetch: PropTypes.func.isRequired,
 };
 
 BooksList.defaultProps = {
@@ -65,6 +67,9 @@ const mapDispatchToProps = dispatch => ({
   },
   filter: category => {
     dispatch(changeFilterAction(category));
+  },
+  fetch: books => {
+    dispatch(fetchBooksAction(books));
   },
 });
 

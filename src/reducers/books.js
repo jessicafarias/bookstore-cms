@@ -1,4 +1,4 @@
-import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
+import { CREATE_BOOK, REMOVE_BOOK, FETCH_BOOKS } from '../actions/index';
 
 const initialState = [];
 
@@ -19,6 +19,8 @@ const bookReducer = (state = initialState, action) => {
       }];
     case REMOVE_BOOK:
       return deleteBook(state, action);
+    case FETCH_BOOKS:
+      return [...state, ...action.payload];
     default:
       return state;
   }

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Book from '../components/Book';
 import { removeBookAction, changeFilterAction, fetchBooksAction } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
-import getData from '../apiRequests/requests2';
+import getData from '../apiRequests/getRequest';
 
 const BooksList = props => {
   const { books, filtered } = props;

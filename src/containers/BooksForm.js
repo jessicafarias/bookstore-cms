@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { createBookAction } from '../actions';
 import '../styles/BooksForm.css';
+import postData from '../apiRequests/postRequest';
 
 const BooksForm = props => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
@@ -33,10 +34,14 @@ const BooksForm = props => {
     const book = {
       id: Math.floor(Math.random() * 100) + 1,
       title: state.title,
+      author: state.author,
       category: state.category,
-      percentage: 0,
+      chapters: 10,
+      complete_chapters: 5,
     };
     createBook(book);
+
+    postData(book).then(response => response);
 
     setState({
       title: '',

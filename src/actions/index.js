@@ -2,6 +2,7 @@ export const CREATE_BOOK = 'CREATE_BOOK';
 export const REMOVE_BOOK = 'REMOVE_BOOK';
 export const CHANGE_FILTER = 'CHANGE_FILTER';
 export const FETCH_BOOKS = 'FETCH_BOOKS';
+export const UPDATE_COMPLETE_CHAPTERS = 'UPDATE_COMPLETE_CHAPTERS';
 
 export const createBookAction = book => ({
   type: CREATE_BOOK,

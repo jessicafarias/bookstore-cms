@@ -2,9 +2,12 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
-import { removeBookAction, changeFilterAction, fetchBooksAction } from '../actions';
+import {
+  removeBookAction, changeFilterAction, fetchBooksAction,
+} from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
 import getData from '../apiRequests/getRequest';
+import updateData from '../apiRequests/updateRequest';
 
 const BooksList = props => {
   const { books, filtered } = props;
@@ -12,6 +15,10 @@ const BooksList = props => {
   const handleRemoveBook = book => {
     const { removeBook } = props;
     removeBook(book);
+  };
+
+  const handleUpdateBook = book => {
+    updateData(book);
   };
 
   const handleFilterChange = category => {
@@ -34,7 +41,14 @@ const BooksList = props => {
       <CategoryFilter handleFilter={handleFilterChange} />
 
       <table style={{ width: '100%' }}>
-        {filteredBooks.map(book => <Book key={book.id} book={book} removeBtn={handleRemoveBook} />)}
+        {filteredBooks.map(book => (
+          <Book
+            key={book.id}
+            book={book}
+            removeBtn={handleRemoveBook}
+            updateBook={handleUpdateBook}
+          />
+        ))}
       </table>
     </div>
   );

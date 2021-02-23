@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import '../styles/Book.css';
 
 const Book = props => {
-  const { book, removeBtn } = props;
+  const { book, removeBtn, updateBook } = props;
   return (
     <tbody>
       <tr>
@@ -45,7 +45,7 @@ const Book = props => {
             <div className="chapter">
               <p className="Current-Chapter">CURRENT CHAPTER</p>
               <p className="Current-Lesson">Chapter 17</p>
-              <button type="button" className="Rectangle-2">
+              <button type="button" className="Rectangle-2" onClick={() => { updateBook(book); }}>
                 <p className="Update-progress">UPDATE PROGRESS</p>
               </button>
             </div>
@@ -64,6 +64,7 @@ Book.propTypes = {
     percentage: PropTypes.number,
   }).isRequired,
   removeBtn: PropTypes.func.isRequired,
+  updateBook: PropTypes.func.isRequired,
 };
 
 export default Book;

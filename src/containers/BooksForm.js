@@ -41,7 +41,7 @@ const BooksForm = props => {
     };
     createBook(book);
 
-    postData(book).then(response => response);
+    postData(book);
 
     setState({
       title: '',

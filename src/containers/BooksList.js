@@ -8,13 +8,17 @@ import {
 import CategoryFilter from '../components/CategoryFilter';
 import getData from '../apiRequests/getRequest';
 import updateData from '../apiRequests/updateRequest';
+import deleteData from '../apiRequests/deleteRequest';
 
 const BooksList = props => {
   const { books, filtered } = props;
 
   const handleRemoveBook = book => {
     const { removeBook } = props;
-    removeBook(book);
+    removeBook(deleteData());
+    deleteData(book).then(res => {
+      console.log(res);
+    });
   };
 
   const handleUpdateBook = book => {

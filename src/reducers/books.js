@@ -17,7 +17,7 @@ const updateProgress = (state, action) => {
   const chapters = action.complete_chapters < action.chapters ? action.complete_chapters + 1 : 0;
   objectUpdate.complete_chapters = chapters;
   objectUpdate.percentage = ((chapters) * 100) / action.chapters;
-  return [...newState, objectUpdate];
+  return [...newState, objectUpdate].sort((a, b) => (a.id - b.id));
 };
 
 const bookReducer = (state = initialState, action) => {

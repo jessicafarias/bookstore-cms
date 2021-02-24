@@ -38,13 +38,15 @@ const Book = props => {
                 </svg>
               </div>
               <div className="flex-col-center">
-                <p className="Percent-Complete">{book.percentage}</p>
+                <p className="Percent-Complete">{`${book.percentage}%`}</p>
                 <p>Completed</p>
               </div>
             </div>
             <div className="chapter">
               <p className="Current-Chapter">CURRENT CHAPTER</p>
-              <p className="Current-Lesson">Chapter 17</p>
+              <p className="Current-Lesson">
+                {`Chapter ${book.complete_chapters}`}
+              </p>
               <button type="button" className="Rectangle-2" onClick={() => { updateBook(book); }}>
                 <p className="Update-progress">UPDATE PROGRESS</p>
               </button>
@@ -62,6 +64,8 @@ Book.propTypes = {
     title: PropTypes.string,
     category: PropTypes.string,
     percentage: PropTypes.number,
+    chapters: PropTypes.number,
+    complete_chapters: PropTypes.number,
   }).isRequired,
   removeBtn: PropTypes.func.isRequired,
   updateBook: PropTypes.func.isRequired,

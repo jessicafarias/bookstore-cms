@@ -11,6 +11,7 @@ export const createBookAction = book => ({
   title: book.title,
   percentage: 0,
   category: book.category,
+  complete_chapters: book.complete_chapters,
 });
 
 export const removeBookAction = book => ({
@@ -31,4 +32,6 @@ export const fetchBooksAction = books => ({
 export const updateBookAction = book => ({
   type: UPDATE_BOOK,
   id: book.id,
+  complete_chapters: book.complete_chapters,
+  chapters: book.chapters,
 });

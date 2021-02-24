@@ -8,6 +8,7 @@ export const createBookAction = book => ({
   type: CREATE_BOOK,
   id: book.id,
   title: book.title,
+  percentage: 0,
   category: book.category,
 });
 

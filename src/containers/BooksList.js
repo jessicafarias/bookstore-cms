@@ -15,14 +15,17 @@ const BooksList = props => {
 
   const handleRemoveBook = book => {
     const { removeBook } = props;
-    removeBook(deleteData());
-    deleteData(book).then(res => {
+    removeBook(book); // CHANGE STORE
+    deleteData(book).then(res => { // CHANGE DB
       console.log(res);
     });
   };
 
   const handleUpdateBook = book => {
-    updateData(book);
+    // const { updateBook } = props;
+    // updateBook(book); // CHANGE STORE
+    // CHANGE THE STORE WITH NEWW DATA
+    updateData(book); // SEND DATA TO DB
   };
 
   const handleFilterChange = category => {

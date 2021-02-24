@@ -36,8 +36,8 @@ const BooksForm = props => {
       title: state.title,
       author: state.author,
       category: state.category,
-      chapters: 10,
-      complete_chapters: 5,
+      chapters: 20,
+      complete_chapters: 0,
     };
     createBook(book);
 

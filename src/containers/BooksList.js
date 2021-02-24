@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
 import {
-  removeBookAction, changeFilterAction, fetchBooksAction,
+  removeBookAction, changeFilterAction, fetchBooksAction, updateBookAction,
 } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
 import getData from '../apiRequests/getRequest';
@@ -22,8 +22,8 @@ const BooksList = props => {
   };
 
   const handleUpdateBook = book => {
-    // const { updateBook } = props;
-    // updateBook(book); // CHANGE STORE
+    const { updateProgress } = props;
+    updateProgress(book); // CHANGE STORE
     // CHANGE THE STORE WITH NEWW DATA
     updateData(book); // SEND DATA TO DB
   };
@@ -71,6 +71,7 @@ BooksList.propTypes = {
   filter: PropTypes.func.isRequired,
   filtered: PropTypes.string,
   fetch: PropTypes.func.isRequired,
+  updateProgress: PropTypes.func.isRequired,
 };
 
 BooksList.defaultProps = {
@@ -91,6 +92,9 @@ const mapDispatchToProps = dispatch => ({
   },
   fetch: books => {
     dispatch(fetchBooksAction(books));
+  },
+  updateProgress: book => {
+    dispatch(updateBookAction(book));
   },
 });
 

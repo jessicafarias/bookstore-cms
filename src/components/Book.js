@@ -9,18 +9,17 @@ const Book = props => {
       <tr>
         <td>
           <div className="flex-row">
-            <div className="align-start book">
-              <p className="School-of">{book.category}</p>
-              <p className="title">{book.title}</p>
-              {/* <p className="blue-text">{`ID ${book.id}`}</p> */}
-              <p className="blue-text">Author</p>
+            <div className="align-start col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <p className="School-of text-xs-center">{book.category}</p>
+              <p className="title text-xs-center">{book.title}</p>
+              <p className="blue-text text-xs-center">Author</p>
               <div className="options blue-text">
                 <p className="border-right ">Comments</p>
                 <button className="border-right " type="button" onClick={() => { removeBtn(book); }}> Remove </button>
                 <p>Edit</p>
               </div>
             </div>
-            <div className="flex-row-center">
+            <div className="flex-row-center col-xs-12 col-sm-6 col-md-6 col-lg-3 ">
               <div className="single-chart">
                 <svg viewBox="0 0 36 36" className="circular-chart blue">
                   <path
@@ -43,12 +42,12 @@ const Book = props => {
                 <p>Completed</p>
               </div>
             </div>
-            <div className="chapter">
-              <p className="Current-Chapter">CURRENT CHAPTER</p>
-              <p className="Current-Lesson">
+            <div className="chapter col-xs-12 col-sm-12 col-lg-3 text-lg-start">
+              <p className="Current-Chapter text-xs-center">CURRENT CHAPTER</p>
+              <p className="Current-Lesson text-xs-center">
                 {`Chapter ${book.complete_chapters} OF ${book.chapters}`}
               </p>
-              <button type="button" className="Rectangle-2" onClick={() => { updateBook(book); }}>
+              <button type="button" className="Rectangle-2 text-xs-center" onClick={() => { updateBook(book); }}>
                 <p className="Update-progress">UPDATE PROGRESS</p>
               </button>
             </div>

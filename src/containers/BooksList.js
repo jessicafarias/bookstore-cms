@@ -15,15 +15,14 @@ const BooksList = props => {
 
   const handleRemoveBook = book => {
     const { removeBook } = props;
-    removeBook(book); // CHANGE STORE
+    removeBook(book);
     deleteData(book);
   };
 
   const handleUpdateBook = book => {
     const { updateProgress } = props;
-    updateProgress(book); // CHANGE STORE
-    // CHANGE THE STORE WITH NEWW DATA
-    updateData(book); // SEND DATA TO DB
+    updateProgress(book);
+    updateData(book);
   };
 
   const handleFilterChange = category => {

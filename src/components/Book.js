@@ -12,7 +12,8 @@ const Book = props => {
             <div className="align-start book">
               <p className="School-of">{book.category}</p>
               <p className="title">{book.title}</p>
-              <p className="blue-text">{`ID ${book.id}`}</p>
+              {/* <p className="blue-text">{`ID ${book.id}`}</p> */}
+              <p className="blue-text">Author</p>
               <div className="options blue-text">
                 <p className="border-right ">Comments</p>
                 <button className="border-right " type="button" onClick={() => { removeBtn(book); }}> Remove </button>

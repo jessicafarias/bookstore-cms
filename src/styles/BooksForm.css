@@ -12,7 +12,8 @@
 }
 
 input {
-  width: 664px;
+  min-width: 150px;
+  width: 75%;
   height: 45px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
@@ -27,7 +28,8 @@ form {
 }
 
 .create-category {
-  width: 200px;
+  min-width: 100px;
+  width: 75%;
   height: 45px;
   padding: 6px 15px 9px 16px;
   border-radius: 4px;
@@ -40,7 +42,8 @@ form {
 }
 
 .button-blue {
-  width: 184px;
+  min-width: 100px;
+  width: 20%;
   height: 45px;
   padding: 12.8px 19px 14.2px 22px;
   border-radius: 3px;

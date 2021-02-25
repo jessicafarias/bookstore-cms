@@ -8,6 +8,7 @@
 
 .header {
   max-width: 1200px;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -18,13 +19,15 @@
 
 .panel-bg {
   display: flex;
-  min-width: 500px;
+  flex-wrap: wrap;
+  max-width: 500px;
+  width: 75%;
   justify-content: space-between;
   align-items: center;
 }
 
 .Bookstore-CMS {
-  width: 260px;
+  max-width: 260px;
   font-family: Montserrat, sans-serif;
   font-size: 30px;
   font-weight: bold;

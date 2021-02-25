@@ -29,6 +29,7 @@ const bookReducer = (state = initialState, action) => {
         category: action.category,
         percentage: action.percentage,
         complete_chapters: action.complete_chapters,
+        chapters: action.chapters,
       }];
     case REMOVE_BOOK:
       return deleteBook(state, action);

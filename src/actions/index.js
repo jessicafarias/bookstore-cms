@@ -12,6 +12,7 @@ export const createBookAction = book => ({
   percentage: 0,
   category: book.category,
   complete_chapters: book.complete_chapters,
+  chapters: book.chapters,
 });
 
 export const removeBookAction = book => ({

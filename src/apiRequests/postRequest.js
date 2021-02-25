@@ -6,7 +6,9 @@ const postData = async data => {
     headers: { 'Content-Type': 'application/json' },
     redirect: 'follow',
     body: JSON.stringify(data),
-  }); return response.json();
+  });
+
+  return response.json();
 };
 
 export default postData;

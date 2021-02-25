@@ -32,16 +32,17 @@ const BooksForm = props => {
     const { createBook } = props;
     event.preventDefault();
     const book = {
-      id: Math.floor(Math.random() * 100) + 1,
       title: state.title,
       author: state.author,
       category: state.category,
       chapters: 20,
       complete_chapters: 0,
+      percentage: 0,
     };
-    createBook(book);
 
-    postData(book);
+    postData(book).then(response => {
+      createBook(response);
+    });
 
     setState({
       title: '',

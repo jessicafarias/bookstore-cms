@@ -16,9 +16,7 @@ const BooksList = props => {
   const handleRemoveBook = book => {
     const { removeBook } = props;
     removeBook(book); // CHANGE STORE
-    deleteData(book).then(res => { // CHANGE DB
-      console.log(res);
-    });
+    deleteData(book);
   };
 
   const handleUpdateBook = book => {

@@ -12,7 +12,7 @@ const Book = props => {
             <div className="align-start book">
               <p className="School-of">{book.category}</p>
               <p className="title">{book.title}</p>
-              <p className="blue-text">Author</p>
+              <p className="blue-text">{`ID ${book.id}`}</p>
               <div className="options blue-text">
                 <p className="border-right ">Comments</p>
                 <button className="border-right " type="button" onClick={() => { removeBtn(book); }}> Remove </button>
@@ -45,7 +45,7 @@ const Book = props => {
             <div className="chapter">
               <p className="Current-Chapter">CURRENT CHAPTER</p>
               <p className="Current-Lesson">
-                {`Chapter ${book.complete_chapters}`}
+                {`Chapter ${book.complete_chapters} OF ${book.chapters}`}
               </p>
               <button type="button" className="Rectangle-2" onClick={() => { updateBook(book); }}>
                 <p className="Update-progress">UPDATE PROGRESS</p>

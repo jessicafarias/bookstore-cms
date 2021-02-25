@@ -8,6 +8,7 @@
 
 .header {
   max-width: 1200px;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -18,13 +19,15 @@
 
 .panel-bg {
   display: flex;
-  min-width: 500px;
+  flex-wrap: wrap;
+  max-width: 500px;
+  width: 75%;
   justify-content: space-between;
   align-items: center;
 }
 
 .Bookstore-CMS {
-  width: 260px;
+  max-width: 260px;
   font-family: Montserrat, sans-serif;
   font-size: 30px;
   font-weight: bold;
@@ -36,8 +39,6 @@
 }
 
 .Oval {
-  width: 20px;
-  height: 20px;
   padding: 14px;
   border: solid 1px #e8e8e8;
   border-radius: 50%;
@@ -63,4 +64,6 @@ select {
   color: #6e6e6e;
   border: none;
   background-color: white;
+  margin: 0;
+  padding: 0;
 }

@@ -19,9 +19,9 @@ const CategoryFilter = props => {
     <div className="header-container">
       <div className="header">
         <div className="panel-bg">
-          <h2 className="Bookstore-CMS">BookStore CMS</h2>
-          <p className="BOOKS">BOOKS</p>
-          <label htmlFor="select">
+          <h2 className="Bookstore-CMS m-auto">BookStore CMS</h2>
+          <p className="BOOKS m-auto">BOOKS</p>
+          <label htmlFor="select" className="mx-auto my-0">
             <select className="select" name="category" id="select" onChange={handleClick}>
               <option disable="true" hidden>CATEGORIES</option>
               {categories.map(

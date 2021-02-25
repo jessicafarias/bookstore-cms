@@ -26,6 +26,7 @@ button {
 .flex-row,
 .percent-comp {
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .flex-row,
@@ -57,7 +58,6 @@ button {
 }
 
 .title {
-  height: 29px;
   font-family: 'Roboto Slab', serif;
   font-size: 22px;
   font-weight: bold;
@@ -176,7 +176,6 @@ button {
 }
 
 .chapter {
-  width: 18%;
   text-align: start;
   padding: 20px;
 }

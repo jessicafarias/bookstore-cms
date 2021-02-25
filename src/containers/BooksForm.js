@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { createBookAction } from '../actions';
 import '../styles/BooksForm.css';
+import postData from '../apiRequests/postRequest';
 
 const BooksForm = props => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
@@ -31,11 +32,17 @@ const BooksForm = props => {
     const { createBook } = props;
     event.preventDefault();
     const book = {
-      id: Math.floor(Math.random() * 100) + 1,
       title: state.title,
+      author: state.author,
       category: state.category,
+      chapters: 20,
+      complete_chapters: 0,
+      percentage: 0,
     };
-    createBook(book);
+
+    postData(book).then(response => {
+      createBook(response);
+    });
 
     setState({
       title: '',
@@ -46,11 +53,11 @@ const BooksForm = props => {
   return (
     <form>
       <p className="new-book">ADD NEW BOOK</p>
-      <div>
-        <label htmlFor="title">
+      <div className="row">
+        <label htmlFor="title" className="col-sm-12 col-lg-6 m-auto">
           <input placeholder="Book title" type="text" id="title" name="title" onChange={handleClick} value={state.title} />
         </label>
-        <label htmlFor="select">
+        <label htmlFor="select" className="col-xs-12 col-sm-6 col-lg-3 m-auto">
           <select className="create-category" name="category" id="select" onChange={handleClick} value={state.category}>
             <option disable="true" hidden>Category</option>
             {categories.map(
@@ -58,7 +65,9 @@ const BooksForm = props => {
             )}
           </select>
         </label>
-        <button className="button-blue" type="submit" onClick={handleSubmit}> ADD BOOK </button>
+        <div className="col-xs-12 col-sm-6 col-lg-3">
+          <button className="button-blue" type="submit" onClick={handleSubmit}> ADD BOOK </button>
+        </div>
       </div>
     </form>
   );

@@ -54,10 +54,10 @@ const BooksForm = props => {
     <form>
       <p className="new-book">ADD NEW BOOK</p>
       <div className="row">
-        <label htmlFor="title" className="col-sm-12 col-lg-6">
+        <label htmlFor="title" className="col-sm-12 col-lg-6 m-auto">
           <input placeholder="Book title" type="text" id="title" name="title" onChange={handleClick} value={state.title} />
         </label>
-        <label htmlFor="select" className="col-xs-12 col-sm-6 col-lg-3">
+        <label htmlFor="select" className="col-xs-12 col-sm-6 col-lg-3 m-auto">
           <select className="create-category" name="category" id="select" onChange={handleClick} value={state.category}>
             <option disable="true" hidden>Category</option>
             {categories.map(

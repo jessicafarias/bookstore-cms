@@ -64,4 +64,6 @@ select {
   color: #6e6e6e;
   border: none;
   background-color: white;
+  margin: 0;
+  padding: 0;
 }
